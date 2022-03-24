@@ -1,0 +1,216 @@
+/* *{
+    background-color: rgb(255, 255, 255);
+ 
+} */
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+#mainlayout {
+    background-color: rgb(255, 255, 255);
+    width: 1366px;
+    height: 1782px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat( 9, 1fr);
+    grid-template-rows: repeat( 11, 1fr);
+    gap: 2px;
+
+}
+
+#texto {
+    
+    grid-column: 2/9;
+    grid-row: 3/7;
+
+    font-size: 300px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 245px;
+    letter-spacing: -11px;
+
+    transform: translate(0.5px, -300px);
+
+    z-index: 100;
+
+}
+
+/* animacion glitch: */
+
+.glitch {
+
+    font-size: 300px;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #a7a7a7, -0.03em -0.04em 0 #575757,
+      0.025em 0.04em 0 #2c2c2c;
+    animation: glitch 725ms infinite;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #a7a7a7, -0.03em -0.04em 0 #575757,
+        0.025em 0.04em 0 #2c2c2c;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #a7a7a7, -0.03em -0.04em 0 #575757,
+        0.025em 0.04em 0 #2c2c2c;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #a7a7a7, 0.025em 0.035em 0 #575757,
+        -0.05em -0.05em 0 #2c2c2c;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #a7a7a7, 0.025em 0.035em 0 #575757,
+        -0.05em -0.05em 0 #2c2c2c;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #a7a7a7, 0.03em 0 0 #575757,
+        0 -0.04em 0 #2c2c2c;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #a7a7a7, 0.03em 0 0 #575757,
+        0 -0.04em 0 #2c2c2c;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #a7a7a7, -0.025em -0.04em 0 #575757,
+        -0.04em -0.025em 0 #2c2c2c;
+    }
+  }
+
+  
+  
+#rectangulosA {
+
+        grid-column: 2/4 ;
+        grid-row: 1/2;
+
+        display: flex;
+        margin-top: 120px;
+}
+
+#puntitosv{
+
+    grid-column: 7/7;
+    grid-row: 1/3;
+    
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+#punto3{
+
+    grid-column: 1/1;
+    grid-row: 3/4;
+
+    display: flex;
+    margin-left: 70;
+    justify-content:center;
+}
+
+#diagonales{
+
+    grid-column: 7/10;
+    grid-row: 3/4;
+
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+#cuboDiag{
+
+    grid-column: 3/4 ;
+    grid-row: 7/8;
+
+    display: flex;
+    z-index: 0;
+
+}
+
+#puntos2hileras{
+
+    grid-column: 1/3;
+    grid-row: 8/9;
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+#rectangulosG{
+
+    grid-column: 2/6;
+    grid-row: 9/10;
+
+    margin-top: 60px;
+}
+
+#rectCH{
+
+    grid-column: 2/4;
+    grid-row: 10/11;
+
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+#rectCH2{
+
+    grid-column: 4/6;
+    grid-row: 10/11;
+
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+#diagV {
+
+    grid-column: 7/8;
+    grid-row: 8/10;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#circulosM{
+
+    grid-column: 8/12;
+    grid-row: 9/10;
+
+    display: flex;
+    justify-content: right;
+}
+
+#lincirc{
+
+    grid-column: 6/8;
+    grid-row: 11/12;
+
+    display: flex;
+    margin-left: 100px;
+    margin-right: 50px;
+}
