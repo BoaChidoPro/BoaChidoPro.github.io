@@ -11,9 +11,7 @@ p.setup = function() {
 p.draw = function() {
   p.clear();
   p.strokeWeight(13);
-  p.fill(255);
-  
-  
+    
   for(var i=-400; i<600; i=i+30){
     p.line(x+i,0, (x+150)+i, 200);
   }  
